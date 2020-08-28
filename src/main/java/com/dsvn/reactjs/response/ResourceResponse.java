@@ -10,17 +10,14 @@ public class ResourceResponse extends ResponseEntity<ResourceResponse.Payload> {
 
     public ResourceResponse(Object object) {
         super(new ResourceResponse.Payload(null, null, object), HttpStatus.OK);
-        // TODO Auto-generated constructor stub
     }
 
     public ResourceResponse(Integer status, String message) {
         super(new ResourceResponse.Payload(status, message, null), HttpStatus.OK);
-        // TODO Auto-generated constructor stub
     }
 
     public ResourceResponse(Integer status, String message, Object object) {
         super(new ResourceResponse.Payload(status, message, object), HttpStatus.OK);
-        // TODO Auto-generated constructor stub
     }
 
     @Data
